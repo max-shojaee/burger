@@ -10,14 +10,12 @@ var orm = {
 	},
 	
 	update: function(table, itemId, resp){
-		/*
-		connection.query('UPDATE '+table+ 'SET devoured=true WHERE id='+itemId+';', 
+		connection.query('UPDATE '+table+' SET devoured=true WHERE id='+itemId+';', 
 			function(err, result){
 				if (err)
 					throw err;
 				resp(result);
 		})
-		*/
 	}
 }
 

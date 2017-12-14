@@ -1,14 +1,18 @@
 var orm = require('../config/orm.js');
 
 var burger = {
-	all: function(res){
-		orm.all('burgers', function(result) {
+	getAll: function(res){
+		orm.getAll('burgers', function(result) {
 			res(result);
 		})
 	},
 
-	update: function(id, res){
-		orm.update('burgers', id, res);
+	updateOne: function(id, res){
+		orm.updateOne('burgers', id, res);
+	},
+
+	addOne: function(item, res){
+		orm.addOne('burgers', item, res);
 	}
 }
 
